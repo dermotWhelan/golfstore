@@ -10,8 +10,17 @@
 
   <body>
   <%= render 'layouts/header'%>
-    <div class="container">
+    <div id='container'>
+      <div id='content'>
+        <p class="notice"><%= flash[:notice] %></p>
     <%= yield %>
+    </div>
+    <div id='first column'>
+      <div class="loginbox">
+        <h2 class="BoxHeader">Login Here...</h2>
+      </div>
+    <div id='searchbox'>
+      <h2 class"BoxHeader">Search Catalog</h2>
     </div>
   <%=render 'layouts/footer'%>  
   </body>
